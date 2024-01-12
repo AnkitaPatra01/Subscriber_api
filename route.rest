@@ -1,0 +1,29 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/65a15f59ae90f40c1f8d0434
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name":"Tony Stark",
+    "subscribedToChannel":"MCU"
+}
+
+###
+
+DELETE  http://localhost:3000/subscribers/65a16275e65a944b402bcc04
+
+###
+
+PATCH http://localhost:3000/subscribers/65a1752beaaf95f6a997e7f0
+Content-Type: application/json
+
+{
+    "name":"Me",
+    "subscribedToChannel":"You"
+}
